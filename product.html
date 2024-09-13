@@ -1,0 +1,120 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Haeil Beads</title>
+    <link rel="stylesheet" href="script.css">
+  </head>
+  <body>
+    <section id="header">
+    <div class="container">
+      <div class="navmenu">
+        <div class="logo">
+          <img src="images/logo.jpeg" width="50px">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!--<li><a href="account.html">Account</a></li>-->
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </section>
+    <section id="products" class="section-b1">
+        <div class="details">
+            <img src="images/2.jpeg" width="100%" id="mainImg">
+            <div class="smallImg-grp">
+                <div class="smallImg-col">
+                    <img src="images/2.jpeg" width="100%" class="small">
+                </div>
+                <div class="smallImg-col">
+                    <img src="images/1.jpeg" width="100%" class="small">
+                </div>
+                <div class="smallImg-col">
+                    <img src="images/3.jpeg" width="100%" class="small">
+                </div>
+                <div class="smallImg-col">
+                    <img src="images/5.jpeg" width="100%" class="small">
+                </div>
+            </div>
+            <div class="details">
+                <h6>Home / Bracelets</h6>
+                <h4>Luxury Unisex Stone Bracelets</h4>
+                <h2>7,000NGN</h2>
+                <select>
+                    <option>Select Size</option>
+                    <option>Large</option>
+                    <option>Small</option>
+                </select>
+                <input type="number" value="1">
+                <button class="normal">Add to Cart</button>
+                <h4>Product Details</h4>
+                <span>The unisex stone bracelets can be worn by anyone and they come in different colors and sizes.
+                     They are a bit heavy but very comfortable on the wrist.</span>
+            </div>
+        </div>
+    </section>
+    <section id="newsletter" class="section-b1">
+      <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>Get Email updates on our newest products and <span>special offers</span></p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your email address">
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+    <footer class="section-b1">
+      <div class="col">
+        <img class="logo" src="images/logo.jpeg" width="50px">
+        <h4>Contact</h4>
+        <p><strong>Address:</strong> No 10, Adedoyin Street, Shomolu. Lagos</p>
+        <p><strong>Phone:</strong> 09134572328, 09083111918</p>
+        <p><strong>Hours:</strong> 8:00 am - 10:00 pm. Mon - Sat</p>
+        <div class="follow">
+          <h4>Follow us</h4>
+        </div>
+      </div>
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact us</a>
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+    </footer>
+
+    <script>
+      let mainImg = document.getElementById("mainImg");
+      let smallImg = document.getElementsByClassName("small");
+
+      smallImg[0].onclick = function(){
+        mainImg.src = smallImg[0].src;
+      }
+      smallImg[1].onclick = function(){
+        mainImg.src = smallImg[1].src;
+      }
+      smallImg[2].onclick = function(){
+        mainImg.src = smallImg[2].src;
+      }
+      smallImg[3].onclick = function(){
+        mainImg.src = smallImg[3].src;
+      }
+    </script>
+
+  </body>
+</html>
